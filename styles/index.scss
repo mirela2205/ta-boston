@@ -12,10 +12,9 @@
 @import './../node_modules/bootstrap/scss/bootstrap-grid';
 @import './../node_modules/bootstrap/scss/bootstrap-utilities';
 
-//reset
+// reset
 @import './reset';
-
-//variables
+// variables
 @import './variables';
 
 // common
@@ -26,3 +25,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: $gray-primary;
 }
+
+@import './homepage/index';
+@import './catalog/index';
