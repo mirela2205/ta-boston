@@ -31,7 +31,7 @@
 
     @include media-breakpoint-up(lg) {
       flex-wrap: nowrap;
-      column-gap: 110px;
+      column-gap: 95px;
     }
 
     ul {
@@ -49,9 +49,44 @@
 
   .footer-contact {
     grid-area: contact;
+
+    h1 {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 300;
+
+      > span {
+        font-weight: 500;
+      }
+    }
   }
 
   .footer-support {
     grid-area: support;
+    text-transform: uppercase;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li:nth-child(n + 2) {
+        margin-left: 50px;
+      }
+    }
+
+    i[class*='fa-'] {
+      color: $brand-primary;
+      font-size: 40px;
+      display: block;
+      margin-bottom: 8px;
+    }
   }
 }
