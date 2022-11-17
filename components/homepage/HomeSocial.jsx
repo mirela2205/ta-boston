@@ -1,6 +1,6 @@
 export default function HomeSocial() {
   return (
-    <section className="home-social container d-lg-none">
+    <section className="home-social container">
       <header>
         <h1>
           <span>We are</span> social!
