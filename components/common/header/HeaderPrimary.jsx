@@ -31,7 +31,7 @@ export default function HeaderPrimary() {
         </ul>
       </nav>
 
-      <nav className="nav-secondary mt-3 mb-5">
+      <nav className="nav-secondary mt-3">
         <ul>
           <li>
             <Link href="/" title="Glamour Suits">

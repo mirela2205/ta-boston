@@ -38,4 +38,32 @@
       }
     }
   }
+
+  //v2 of layout flex
+  &:nth-child(2) {
+    .product-tiles {
+      @include media-breakpoint-up(lg) {
+        display: flex;
+        // era deja flex de mai sus dar il punem oricum ca ex
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > li {
+          width: 27.386541%;
+        }
+      }
+    }
+  }
+
+  // v3 of layout grid
+  &:nth-child(3) {
+    .product-tiles {
+      @include media-breakpoint-up(lg) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // pe mobil ar fi repeat (1,1fr) si row gap
+        gap: 8.8419405%;
+      }
+    }
+  }
 }
